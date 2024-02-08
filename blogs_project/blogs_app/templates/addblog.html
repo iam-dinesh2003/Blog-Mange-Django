@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% block title %}addblog{% endblock %}
+
+{% block content %}
+  {% if user.is_authenticated %}
+    <h3>Add blog<h3>
+    <form method="post">
+      {% csrf_token %}
+      <input type="text" placeholder="Blog" name="title"/>
+      <button type="submit" value="submit">submit</button>
+    </form>
+  {% else %}
+    <p>please login</p>
+  {% endif %}
+{% endblock %}

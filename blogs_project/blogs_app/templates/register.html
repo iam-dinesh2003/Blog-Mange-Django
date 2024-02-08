@@ -1,0 +1,10 @@
+{% extends 'index.html' %} {% block title %}register{% endblock %} 
+{% block content %}
+<h3>Register<h3>
+<form method="post">
+  {% csrf_token %}
+  <input type="text" name="username" placeholder="username" />
+  <input name="password" placeholder="password" />
+  <button type="submit" value="submit">submit</button>
+</form>
+{% endblock %}

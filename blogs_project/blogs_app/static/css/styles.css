@@ -1,0 +1,45 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.navbar a {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.container {
+  width: 70%;
+  margin: 20px 0% 0% 15%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input {
+  padding: 10px;
+  width: 100%;
+}
+
+.blogs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blog {
+  border: solid 3px black;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
